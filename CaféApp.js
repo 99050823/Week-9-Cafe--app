@@ -99,7 +99,7 @@ function kassabon () {
     } 
 
     if (wijn > 0) {
-        document.write("Prijs wijn: &euro;" + wijn * prijs2 + "<br>");
+        document.write("Prijs wijn: &euro;" + Math.floor((wijn * prijs2) * 100) / 100 + "<br>");
     } 
 
     if (fris > 0 ) {
@@ -118,7 +118,7 @@ function kassabon () {
 
     document.write("<br>");
 
-    var totaal = (bier * prijs1) + (wijn * prijs2) + (fris * prijs3) + (bitterballen8 * prijs4) + (bitterballen16 * prijs5);
+    var totaal = (bier * prijs1) + (Math.floor((wijn * prijs2) * 100) / 100) + (fris * prijs3) + (bitterballen8 * prijs4) + (bitterballen16 * prijs5);
 
     document.write("-----------------------------<br>")
 
