@@ -118,7 +118,7 @@ function kassabon () {
 
     document.write("<br>");
 
-    var totaal = (bier * prijs1) + (Math.floor((wijn * prijs2) * 100) / 100) + (fris * prijs3) + (bitterballen8 * prijs4) + (bitterballen16 * prijs5);
+    var totaal = (Math.floor((bier * prijs1)  * 100) / 100) + (Math.floor((wijn * prijs2) * 100) / 100) + (Math.floor((fris * prijs3) * 100) / 100) + (Math.floor((bitterballen8 * prijs4) * 100) / 100) + (Math.floor((bitterballen16 * prijs5) * 100) / 100);
 
     document.write("-----------------------------<br>")
 
